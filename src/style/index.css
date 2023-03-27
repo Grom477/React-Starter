@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 51px;
+  background-color: #1a1919;
+  display: flex;
+  align-items: center;
+}
+.header__nav {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+.header__nav-list {
+  color: #fff;
+}
+.header__nav-list:hover {
+  color: rgb(255, 179, 37);
+  transition: all linear 0.2s;
+}
+.header__nav #nav__content {
+  position: relative;
+}
+.header__nav #nav__content::before {
+  content: "";
+  position: absolute;
+  right: 47px;
+  top: 5px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: rgb(255, 179, 37);
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+.about .container {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.about .container__up {
+  display: flex;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+  margin-bottom: 50px;
+  align-items: center;
+}
+.about .container__up img {
+  width: 50%;
+}
+.about .container__up-title {
+  width: 100%;
+  height: 100%;
+  font-size: 60px;
+  font-weight: 700;
+}
+.about .container__up-title span {
+  color: rgb(255, 179, 37);
+}
+.about .container__down {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.about .container__down-text {
+  font-size: 18px;
+  font-weight: 700;
+}
+.about .container__down-info {
+  font-size: 15px;
+}
+
+footer {
+  width: 100%;
+  height: 26px;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+}
+footer .footers {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+footer .footers__text {
+  color: #fff;
+  opacity: 0.7;
+}
+footer .footers__contacts {
+  display: flex;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+}
+footer .footers__contacts i {
+  color: #fff;
+  font-size: 20px;
+}/*# sourceMappingURL=index.css.map */
